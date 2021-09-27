@@ -1,0 +1,264 @@
+@font-face {
+	font-family: "Menlo";
+	src: url("/fonts/Menlo-Regular.woff") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #AEA79C;
+	font-family: 'Menlo', sans-serif;
+	font-weight: bold;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+}
+
+.bigH2 {
+	font-size: 7rem;
+}
+
+body {
+	background-color: #111313;
+}
+
+hr.divider {
+	border-top: 3px solid #bbb;
+}
+
+.bigP {
+	font-size: 22px;
+}
+
+a {
+	color: white;
+	font-family: 'Menlo', sans-serif;
+}
+
+a:hover {
+	color: wheat;
+	font-family: 'Menlo', sans-serif;
+}
+
+p {
+	font-family: 'Menlo', sans-serif;
+	color: #AEA79C;
+}
+
+section {
+	padding-right: 10rem;
+	padding-left: 10rem;
+	padding-bottom: 5rem;
+}
+
+.iconButton {
+	font-size: 1.5rem;
+}
+
+.btn-primary {
+	background-color: transparent;
+	border: transparent;
+	color: wheat;
+	font-family: "Menlo";
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	outline: none !important;
+	box-shadow: none;
+	background-color: wheat !important;
+	border: transparent !important;
+	color: black!important;
+	border-radius: 10px;
+	font-family: "Menlo";
+}
+
+.wrapperContainer {
+	background-color: #1E1F23;
+	border-radius: 50px;
+}
+
+.card {
+	background: #1E1F23;
+	box-shadow: 8px 8px 16px #1a1a1d;
+	border-radius: 20px !important;
+	border: none;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.card img {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.pb-image {
+	border-radius: 50px;
+	background: #AEA79C;
+}
+
+.pb-20 {
+	padding-bottom: 20rem;
+}
+
+.progress {
+	background-color: #212529;
+}
+
+.progress-bar {
+	margin-right: -15px;
+	margin-left: -15px;
+	background-color: #AEA79C;
+	color: #212529;
+}
+
+i {
+	color: #AEA79C;
+}
+
+.text-shadow {
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+.vScroll::-webkit-scrollbar {
+	display: none;
+}
+
+.vScroll {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.vScroll {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Bootstrap Modify */
+
+.dropdown-menu {
+	background: rgba( 255, 255, 255, 0.2);
+	color: white;
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+	backdrop-filter: blur( 14.0px);
+	-webkit-backdrop-filter: blur( 14.0px);
+	border-radius: 10px;
+	width: 10px !important;
+	text-align: center;
+}
+
+.dropdown-item {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.pt-10 {
+	padding-top: 15rem;
+}
+
+.pl-10 {
+	padding-left: 10rem;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-o {
+	opacity: 0%;
+}
+
+#navbar {
+	background-color: transparent;
+	top: 0;
+}
+
+.logo {
+	margin-top: -1rem;
+	height: 40px;
+	width: 40px;
+	transition: 0.4s;
+}
+
+@media screen and (max-width: 1100px) {
+	.nText {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	section {
+		padding-right: 10rem;
+		padding-left: 10rem;
+		padding-bottom: 5rem;
+	}
+	.leadingBox {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	.mt-md-5 {
+		margin-top: 5rem;
+	}
+	.pt-10 {
+		padding-top: 8rem;
+	}
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 650px) {
+	section {
+		padding-right: 2rem;
+		padding-left: 2rem;
+		padding-bottom: 5rem;
+	}
+	.leadingBox {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	.mr-5 {
+		margin-right: 0 !important;
+	}
+	.nText {
+		top: 2rem;
+		margin-left: 4rem;
+		margin-right: 4rem;
+		font-size: 50px;
+	}
+	.ml-lg-10 {
+		margin-left: 0rem;
+		height: 3rem;
+	}
+	.mobile-none {
+		display: none;
+	}
+}
