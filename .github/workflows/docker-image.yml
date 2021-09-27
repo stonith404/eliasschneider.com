@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DOCKER_REPO: generalxhd/eliasschneider.com
     steps:
       - name: checkout code
         uses: actions/checkout@v2
@@ -21,5 +23,5 @@ jobs:
       - name: build the image
         run: |
           docker buildx build --push \
-            --tag $GITHUB_REPOSITORY:latest \
+            --tag ${{env.DOCKER_REPO}}:latest \
             --platform linux/amd64,linux/arm64,linux/arm/v7 .
