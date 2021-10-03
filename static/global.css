@@ -28,7 +28,7 @@ h2 {
 }
 
 body {
-	background-color: #111313;
+	background-color: #111313 !important;
 }
 
 hr.divider {
@@ -39,13 +39,13 @@ hr.divider {
 	font-size: 22px;
 }
 
-a {
+body a {
 	color: white;
 	font-family: 'Menlo', sans-serif;
 }
 
-a:hover {
-	color: wheat;
+body a:hover {
+	color: #f5deb3;
 	font-family: 'Menlo', sans-serif;
 }
 
@@ -60,23 +60,23 @@ section {
 	padding-bottom: 5rem;
 }
 
-.iconButton {
+body .iconButton {
 	font-size: 1.5rem;
 }
 
-.btn-primary {
+body .btn-p {
 	background-color: transparent;
-	border: transparent;
+	border: transparent  ;
 	color: wheat;
 	font-family: "Menlo";
 }
 
-.btn-primary:hover, .btn-primary:focus {
-	outline: none !important;
+body .btn-p:hover, .btn-p:focus {
+	outline: none;
 	box-shadow: none;
-	background-color: wheat !important;
-	border: transparent !important;
-	color: black!important;
+	background-color: wheat ;
+	border: transparent ;
+	color: black ;
 	border-radius: 10px;
 	font-family: "Menlo";
 }
@@ -86,13 +86,13 @@ section {
 	border-radius: 50px;
 }
 
-.card {
-	background: #1E1F23;
+body .card {
+	background: #1E1F23 ;
 	box-shadow: 8px 8px 16px #1a1a1d;
-	border-radius: 20px !important;
+	border-radius: 20px ;
 	border: none;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
+	padding-right: 0 ;
+	padding-left: 0 ;
 }
 
 .card img {
@@ -109,11 +109,11 @@ section {
 	padding-bottom: 20rem;
 }
 
-.progress {
+body .progress {
 	background-color: #212529;
 }
 
-.progress-bar {
+body .progress-bar {
 	margin-right: -15px;
 	margin-left: -15px;
 	background-color: #AEA79C;
@@ -262,3 +262,9 @@ button:focus {
 		display: none;
 	}
 }
+
+
+
+::selection {
+	background: rgba(245, 222, 179, 0.1) ;
+  }
