@@ -1,10 +1,15 @@
 @font-face {
-	font-family: "Menlo";
-	src: url("/fonts/Menlo-Regular.woff") format("truetype");
+	font-family: 'Menlo';
+	src: url('/fonts/Menlo-Regular.woff') format('truetype');
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: #AEA79C;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #aea79c;
 	font-family: 'Menlo', sans-serif;
 	font-weight: bold;
 }
@@ -51,7 +56,7 @@ body a:hover {
 
 p {
 	font-family: 'Menlo', sans-serif;
-	color: #AEA79C;
+	color: #aea79c;
 }
 
 section {
@@ -66,33 +71,34 @@ body .iconButton {
 
 body .btn-p {
 	background-color: transparent;
-	border: transparent  ;
+	border: transparent;
 	color: wheat;
-	font-family: "Menlo";
+	font-family: 'Menlo';
 }
 
-body .btn-p:hover, .btn-p:focus {
+body .btn-p:hover,
+.btn-p:focus {
 	outline: none;
 	box-shadow: none;
-	background-color: wheat ;
-	border: transparent ;
-	color: black ;
+	background-color: wheat;
+	border: transparent;
+	color: black;
 	border-radius: 10px;
-	font-family: "Menlo";
+	font-family: 'Menlo';
 }
 
 .wrapperContainer {
-	background-color: #1E1F23;
+	background-color: #1e1f23;
 	border-radius: 50px;
 }
 
 body .card {
-	background: #1E1F23 ;
+	background: #1e1f23;
 	box-shadow: 8px 8px 16px #1a1a1d;
-	border-radius: 20px ;
+	border-radius: 20px;
 	border: none;
-	padding-right: 0 ;
-	padding-left: 0 ;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .card img {
@@ -102,7 +108,7 @@ body .card {
 
 .pb-image {
 	border-radius: 50px;
-	background: #AEA79C;
+	background: #aea79c;
 }
 
 .pb-20 {
@@ -116,19 +122,20 @@ body .progress {
 body .progress-bar {
 	margin-right: -15px;
 	margin-left: -15px;
-	background-color: #AEA79C;
+	background-color: #aea79c;
 	color: #212529;
 }
 
 i {
-	color: #AEA79C;
+	color: #aea79c;
 }
 
 .text-shadow {
 	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
 	outline: none;
 }
 
@@ -166,11 +173,11 @@ button:focus {
 /* Bootstrap Modify */
 
 .dropdown-menu {
-	background: rgba( 255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.2);
 	color: white;
 	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-	backdrop-filter: blur( 14.0px);
-	-webkit-backdrop-filter: blur( 14.0px);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
 	border-radius: 10px;
 	width: 10px !important;
 	text-align: center;
@@ -263,8 +270,6 @@ button:focus {
 	}
 }
 
-
-
 ::selection {
-	background: rgba(245, 222, 179, 0.1) ;
-  }
+	background: rgba(245, 222, 179, 0.1);
+}
