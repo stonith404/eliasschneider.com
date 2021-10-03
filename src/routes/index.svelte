@@ -92,15 +92,15 @@
 
 				<hr class="divider mt-5" />
 
-				<a class="btn btn-p iconButton" href="mailto:elias@eliasschneider.com"
+				<a class="btn btn-primary iconButton" href="mailto:elias@eliasschneider.com"
 					><i class="fas fa-at" /></a
 				>
 
-				<a class="btn btn-p iconButton" target="blank" href="https://github.com/generalxhd"
+				<a class="btn btn-primary iconButton" target="blank" href="https://github.com/generalxhd"
 					><i class="fab fa-github" /></a
 				>
 				<a
-					class="btn btn-p iconButton"
+					class="btn btn-primary iconButton"
 					target="blank"
 					href="https://www.linkedin.com/in/elias-schneider-82887a21a/"
 					><i class="fab fa-linkedin" /></a
@@ -150,7 +150,7 @@
 					});
 					showMoreSkillsButton = false;
 				}}
-				class="btn btn-p mt-5 mt-md-0">Show {moreSkills.length} more skills...</button
+				class="btn btn-primary mt-5 mt-md-0">Show {moreSkills.length} more skills...</button
 			>
 		</div>
 	{/if}
@@ -176,7 +176,7 @@
 						{@html project.desc}
 					</p>
 					{#if project.buttonText != ''}
-						<a class="btn btn-p mt-4" target="blank" href={project.buttonPath}
+						<a class="btn btn-primary mt-4" target="blank" href={project.buttonPath}
 							>{project.buttonText}</a
 						>
 					{/if}

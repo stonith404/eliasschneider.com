@@ -30,7 +30,7 @@
          
         </p>
         <div class="d-flex justify-content-center pt-3">
-            <a class="btn btn-p" href="/">Go back to home</a>
+            <a class="btn btn-primary" href="/">Go back to home</a>
         </div>
     </div>
 </section>

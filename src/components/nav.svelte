@@ -28,6 +28,12 @@
 </section>
 
 <style>
+    .logo {
+	margin-top: -1rem;
+	height: 40px;
+	width: 40px;
+	transition: 0.4s;
+}
     h1 {
         font-size: 25px;
     }

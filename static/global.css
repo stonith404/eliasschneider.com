@@ -54,7 +54,8 @@ body a:hover {
 	font-family: 'Menlo', sans-serif;
 }
 
-p {
+p,
+small {
 	font-family: 'Menlo', sans-serif;
 	color: #aea79c;
 }
@@ -69,15 +70,15 @@ body .iconButton {
 	font-size: 1.5rem;
 }
 
-body .btn-p {
+body .btn-primary {
 	background-color: transparent;
 	border: transparent;
 	color: wheat;
 	font-family: 'Menlo';
 }
 
-body .btn-p:hover,
-.btn-p:focus {
+body .btn-primary:hover,
+.btn-primary:focus {
 	outline: none;
 	box-shadow: none;
 	background-color: wheat;
@@ -85,11 +86,6 @@ body .btn-p:hover,
 	color: black;
 	border-radius: 10px;
 	font-family: 'Menlo';
-}
-
-.wrapperContainer {
-	background-color: #1e1f23;
-	border-radius: 50px;
 }
 
 body .card {
@@ -111,10 +107,6 @@ body .card {
 	background: #aea79c;
 }
 
-.pb-20 {
-	padding-bottom: 20rem;
-}
-
 body .progress {
 	background-color: #212529;
 }
@@ -134,92 +126,14 @@ i {
 	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
-textarea:focus,
-input:focus {
-	outline: none;
-}
-
-button:focus {
-	outline: none;
-}
-
-.vScroll::-webkit-scrollbar {
-	display: none;
-}
-
-.vScroll {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
-
-.vScroll {
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: auto;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+::selection {
+	background: rgba(245, 222, 179, 0.1);
 }
 
 /* Bootstrap Modify */
 
-.dropdown-menu {
-	background: rgba(255, 255, 255, 0.2);
-	color: white;
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
-	border-radius: 10px;
-	width: 10px !important;
-	text-align: center;
-}
-
-.dropdown-item {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-.pt-10 {
-	padding-top: 15rem;
-}
-
-.pl-10 {
-	padding-left: 10rem;
-}
-
 .hide {
 	display: none;
-}
-
-.hide-o {
-	opacity: 0%;
-}
-
-#navbar {
-	background-color: transparent;
-	top: 0;
-}
-
-.logo {
-	margin-top: -1rem;
-	height: 40px;
-	width: 40px;
-	transition: 0.4s;
-}
-
-@media screen and (max-width: 1100px) {
-	.nText {
-		font-size: 60px;
-	}
 }
 
 @media screen and (max-width: 992px) {
@@ -240,8 +154,6 @@ button:focus {
 	}
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-
 @media screen and (max-width: 650px) {
 	section {
 		padding-right: 2rem;
@@ -252,15 +164,7 @@ button:focus {
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
-	.mr-5 {
-		margin-right: 0 !important;
-	}
-	.nText {
-		top: 2rem;
-		margin-left: 4rem;
-		margin-right: 4rem;
-		font-size: 50px;
-	}
+
 	.ml-lg-10 {
 		margin-left: 0rem;
 		height: 3rem;
@@ -268,8 +172,4 @@ button:focus {
 	.mobile-none {
 		display: none;
 	}
-}
-
-::selection {
-	background: rgba(245, 222, 179, 0.1);
 }
