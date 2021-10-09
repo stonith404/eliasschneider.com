@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      DOCKER_REPO: generalxhd/eliasschneider.com
     steps:
       - name: checkout code
         uses: actions/checkout@v2
@@ -18,10 +16,10 @@ jobs:
         uses: crazy-max/ghaction-docker-buildx@v1
         with:
           version: latest
-      - name: login to docker hub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
+      - name: login to docker registry
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ghcr.io -u "${{ secrets.DOCKER_USER }}" --password-stdin
       - name: build the image
         run: |
           docker buildx build --push \
-            --tag ${{env.DOCKER_REPO}}:latest \
+            --tag ${{GITHUB_REPOSITORY}}:latest \
             --platform linux/amd64,linux/arm64,linux/arm/v7 .
