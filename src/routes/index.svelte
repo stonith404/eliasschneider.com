@@ -3,16 +3,15 @@
 	var skills = [
 		{ name: 'HTML & CSS', progress: 95, icon: 'devicon-html5-plain' },
 		{ name: 'Flutter', progress: 80, icon: 'devicon-flutter-plain' },
-		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' },
-		{ name: 'Firebase', progress: 75, icon: 'devicon-firebase-plain' },
-		{ name: 'Svelte', progress: 40, icon: 'devicon-svelte-plain' },
+		{ name: 'Svelte Kit', progress: 60, icon: 'devicon-svelte-plain' },
 		{ name: 'Linux', progress: 60, icon: 'devicon-linux-plain' },
 		{ name: 'Java Script', progress: 50, icon: 'devicon-javascript-plain' }
 	];
 
 	var moreSkills = [
-		{ name: 'Docker', progress: 25, icon: 'devicon-docker-plain' },
-		{ name: 'Node JS', progress: 15, icon: 'devicon-nodejs-plain' }
+		{ name: 'Docker', progress: 40, icon: 'devicon-docker-plain' },
+		{ name: 'Firebase', progress: 75, icon: 'devicon-firebase-plain' },
+		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' },
 	];
 
 	var projects = [
