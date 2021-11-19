@@ -1,18 +1,9 @@
 <script type="typescript">
 	var showMoreSkillsButton = true;
-	var skills = [
-		{ name: 'HTML & CSS', progress: 95, icon: 'devicon-html5-plain' },
-		{ name: 'Flutter', progress: 80, icon: 'devicon-flutter-plain' },
-		{ name: 'Svelte Kit', progress: 60, icon: 'devicon-svelte-plain' },
-		{ name: 'Linux', progress: 60, icon: 'devicon-linux-plain' },
-		{ name: 'Java Script', progress: 50, icon: 'devicon-javascript-plain' }
-	];
+	import * as skillsJson from '../../static/skills.json';
 
-	var moreSkills = [
-		{ name: 'Docker', progress: 40, icon: 'devicon-docker-plain' },
-		{ name: 'Firebase', progress: 75, icon: 'devicon-firebase-plain' },
-		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' },
-	];
+	var skills = skillsJson.skills;
+	var moreSkills = skillsJson.moreSkills;
 
 	var projects = [
 		{
