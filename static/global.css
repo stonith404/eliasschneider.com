@@ -78,12 +78,13 @@ body .btn-primary {
 }
 
 body .btn-primary:hover,
+.btn-primary:active,
 .btn-primary:focus {
 	outline: none;
-	box-shadow: none;
-	background-color: wheat;
+	box-shadow: none !important;
+	background-color: wheat !important;
 	border: transparent;
-	color: black;
+	color: black !important;
 	border-radius: 10px;
 	font-family: 'Menlo';
 }

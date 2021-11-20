@@ -1,6 +1,5 @@
 FROM node:14-alpine as builder
 
-
 COPY package.json ./
 RUN ["npm", "install"]
 COPY . ./

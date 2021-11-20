@@ -1,9 +1,17 @@
 <script type="typescript">
 	var showMoreSkillsButton = true;
-	import * as skillsJson from '../../static/skills.json';
+	var skills = [
+		{ name: 'HTML & CSS', progress: 95, icon: 'devicon-html5-plain' },
+		{ name: 'Flutter', progress: 80, icon: 'devicon-flutter-plain' },
+		{ name: 'Svelte Kit', progress: 60, icon: 'devicon-svelte-plain' },
+		{ name: 'Linux', progress: 60, icon: 'devicon-linux-plain' },
+		{ name: 'Docker', progress: 70, icon: 'devicon-docker-plain' }
+	];
 
-	var skills = skillsJson.skills;
-	var moreSkills = skillsJson.moreSkills;
+	var moreSkills = [
+		{ name: 'SQL', progress: 50, icon: 'devicon-mysql-plain' },
+		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' }
+	];
 
 	var projects = [
 		{
@@ -11,14 +19,14 @@
 			title: 'Gradely 2',
 			desc: "Gradely is beautiful grade monitoring app. Available for many OS's. \n Of course built with Flutter!",
 			buttonText: 'Visit Gradely 2',
-			buttonPath: 'https://github.com/generalxhd/Gradely2'
+			buttonPath: 'https://gradelyapp.com'
 		},
 		{
 			image: 'images/kirchenfeld.png',
 			title: 'Chilefäud app',
 			desc: 'An app for my old school, to access the intern website over the app, also built with Flutter.',
 			buttonText: 'Download Chilefäud',
-			buttonPath: 'https://apps.eliasschneider.com/gymkirchenfeld'
+			buttonPath: 'https://github.com/generalxhd/chilefaeud'
 		},
 		{
 			image: 'images/herospace.png',
@@ -26,13 +34,6 @@
 			desc: 'With <a href="https://weblit.ch" target="blank">Weblit</a>, I created a modern website for office rental.',
 			buttonText: 'Visit HeroSpace',
 			buttonPath: 'https://herospace.ch'
-		},
-		{
-			image: 'images/coronaHand.png',
-			title: 'CoronaHand.ch',
-			desc: 'While the corona pandemic, I created a website for risk patients.',
-			buttonText: 'Visit CoronaHand (Archive)',
-			buttonPath: 'https://archive.eliasschneider.com/coronaHand'
 		}
 	];
 
@@ -75,9 +76,8 @@
 				<p class="text-left bigP">
 					Hi, <br /> My name is Elias Schneider and I'm learning software engineering at
 					<a class="bigP" target="blank" href="https://noseryoung.ch">Noser Young</a>. <br />
-					<br />Currently I mostly develop apps with Flutter, but I want to learn as many
-					programming languages as possible. <br /> <br /> Do you want to contribute in a project or
-					do you have questions? Get in touch :)
+					<br />I love technology and open source. At the moment I'm programming most with Svelte
+					and Flutter but I love to learn new programming languages and technologies.
 				</p>
 
 				<hr class="divider mt-5" />
@@ -135,9 +135,7 @@
 			<button
 				on:click={() => {
 					skills = [...skills, ...moreSkills];
-					skills = skills.sort(function (a, b) {
-						return b.progress - a.progress;
-					});
+
 					showMoreSkillsButton = false;
 				}}
 				class="btn btn-primary mt-5 mt-md-0">Show {moreSkills.length} more skills...</button
