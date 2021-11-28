@@ -76,8 +76,8 @@
 				<p class="text-left bigP">
 					Hi, <br /> My name is Elias Schneider and I'm learning software engineering at
 					<a class="bigP" target="blank" href="https://noseryoung.ch">Noser Young</a>. <br />
-					<br />I love technology and open source. At the moment I'm programming most with Svelte
-					and Flutter but I love to learn new programming languages and technologies.
+					<br />I love technology and open source. At the moment, I'm mostly delving into Docker, Svelte and Flutter, 
+					but I want to learn many more programming languages and technologies.
 				</p>
 
 				<hr class="divider mt-5" />
