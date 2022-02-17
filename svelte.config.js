@@ -9,8 +9,6 @@ const config = {
 
 	kit: {
 		adapter: node(),
-		
-		target: '#svelte'
 	}
 };
 
