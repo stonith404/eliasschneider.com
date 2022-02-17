@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #aea79c;
+	color: white;
 	font-family: 'Menlo', sans-serif;
 	font-weight: bold;
 }
@@ -34,6 +34,8 @@ h2 {
 
 body {
 	background-color: #111313 !important;
+	font-family: 'Menlo', sans-serif !important;
+	color: whitesmoke !important;
 }
 
 hr.divider {
@@ -44,20 +46,31 @@ hr.divider {
 	font-size: 22px;
 }
 
-body a {
-	color: white;
+body a,
+.btn {
 	font-family: 'Menlo', sans-serif;
+	background: linear-gradient(-45deg, #f12711, #f5af19);
+	background-size: 300%;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 20s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% {
+		background-position: 0px 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0px 50%;
+	}
 }
 
 body a:hover {
 	color: #f5deb3;
 	font-family: 'Menlo', sans-serif;
-}
-
-p,
-small {
-	font-family: 'Menlo', sans-serif;
-	color: #aea79c;
 }
 
 section {
@@ -73,7 +86,6 @@ body .iconButton {
 body .btn-primary {
 	background-color: transparent;
 	border: transparent;
-	color: wheat;
 	font-family: 'Menlo';
 }
 
@@ -82,7 +94,7 @@ body .btn-primary:hover,
 .btn-primary:focus {
 	outline: none;
 	box-shadow: none !important;
-	background-color: wheat !important;
+	background-color: whitesmoke !important;
 	border: transparent;
 	color: black !important;
 	border-radius: 10px;
@@ -105,7 +117,7 @@ body .card {
 
 .pb-image {
 	border-radius: 50px;
-	background: #aea79c;
+	background: whitesmoke;
 }
 
 body .progress {
@@ -115,12 +127,12 @@ body .progress {
 body .progress-bar {
 	margin-right: -15px;
 	margin-left: -15px;
-	background-color: #aea79c;
+	background-color: whitesmoke;
 	color: #212529;
 }
 
 i {
-	color: #aea79c;
+	color: whitesmoke;
 }
 
 .text-shadow {

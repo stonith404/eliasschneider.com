@@ -1,15 +1,16 @@
 <script type="typescript">
 	var showMoreSkillsButton = true;
 	var skills = [
-		{ name: 'HTML & CSS', progress: 95, icon: 'devicon-html5-plain' },
+		{ name: 'NextJS', progress: 40, icon: 'devicon-nextjs-plain' },
 		{ name: 'Flutter', progress: 80, icon: 'devicon-flutter-plain' },
-		{ name: 'Svelte Kit', progress: 60, icon: 'devicon-svelte-plain' },
-		{ name: 'Linux', progress: 60, icon: 'devicon-linux-plain' },
-		{ name: 'Docker', progress: 70, icon: 'devicon-docker-plain' }
+		{ name: 'Express', progress: 60, icon: 'devicon-express-original' },
+		{ name: 'Typescript', progress: 60, icon: 'devicon-typescript-plain' },
+		{ name: 'Svelte Kit', progress: 70, icon: 'devicon-svelte-plain' },
+		{ name: 'SQL', progress: 70, icon: 'devicon-mysql-plain' }
 	];
 
 	var moreSkills = [
-		{ name: 'SQL', progress: 50, icon: 'devicon-mysql-plain' },
+		{ name: 'Docker', progress: 80, icon: 'devicon-docker-plain' },
 		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' }
 	];
 
@@ -26,7 +27,7 @@
 			title: 'Chilefäud app',
 			desc: 'An app for my old school, to access the intern website over the app, also built with Flutter.',
 			buttonText: 'Download Chilefäud',
-			buttonPath: 'https://github.com/generalxhd/chilefaeud'
+			buttonPath: 'https://github.com/stonith404/chilefaeud'
 		},
 		{
 			image: 'images/herospace.png',
@@ -76,8 +77,8 @@
 				<p class="text-left bigP">
 					Hi, <br /> My name is Elias Schneider and I'm learning software engineering at
 					<a class="bigP" target="blank" href="https://noseryoung.ch">Noser Young</a>. <br />
-					<br />I love technology and open source. At the moment, I'm mostly delving into Docker, Svelte and Flutter, 
-					but I want to learn many more programming languages and technologies.
+					<br />I love technology and always want to be up to date with this topic. At the moment
+					I'm learning NextJS, Flutter and everything about Web3.
 				</p>
 
 				<hr class="divider mt-5" />
@@ -86,7 +87,7 @@
 					><i class="fas fa-at" /></a
 				>
 
-				<a class="btn btn-primary iconButton" target="blank" href="https://github.com/generalxhd"
+				<a class="btn btn-primary iconButton" target="blank" href="https://github.com/stonith404"
 					><i class="fab fa-github" /></a
 				>
 				<a
