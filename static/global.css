@@ -52,6 +52,7 @@ body a,
 	background: linear-gradient(-45deg, #f12711, #f5af19);
 	background-size: 300%;
 	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: animated_text 20s ease-in-out infinite;
 }
