@@ -1,20 +1,29 @@
 <script type="typescript">
+	import { calculateAge } from '../utils/date.util';
+
 	var showMoreSkillsButton = true;
 	var skills = [
-		{ name: 'NextJS', progress: 40, icon: 'devicon-nextjs-plain' },
+		{ name: 'NextJS', progress: 70, icon: 'devicon-nextjs-plain' },
 		{ name: 'Flutter', progress: 80, icon: 'devicon-flutter-plain' },
 		{ name: 'Express', progress: 60, icon: 'devicon-express-original' },
-		{ name: 'Typescript', progress: 60, icon: 'devicon-typescript-plain' },
-		{ name: 'Svelte Kit', progress: 70, icon: 'devicon-svelte-plain' },
-		{ name: 'SQL', progress: 70, icon: 'devicon-mysql-plain' }
+		{ name: 'Typescript', progress: 70, icon: 'devicon-typescript-plain' },
+		{ name: 'Svelte', progress: 60, icon: 'devicon-svelte-plain' },
+		{ name: 'SQL', progress: 80, icon: 'devicon-mysql-plain' }
 	];
 
 	var moreSkills = [
-		{ name: 'Docker', progress: 80, icon: 'devicon-docker-plain' },
+		{ name: 'Docker', progress: 70, icon: 'devicon-docker-plain' },
 		{ name: 'Appwrite', progress: 90, icon: 'devicon-appwrite-plain' }
 	];
 
 	var projects = [
+		{
+			image: 'images/pingvin-share.png',
+			title: 'Pingvin Share',
+			desc: 'My first hackathon project: A self-hosted file sharing platform.',
+			buttonText: 'Learn more',
+			buttonPath: 'https://dev.to/stonith404/pingvin-share-a-selfhosted-file-sharing-platform-2mb0'
+		},
 		{
 			image: 'images/gradely2.png',
 			title: 'Gradely 2',
@@ -75,7 +84,8 @@
 
 			<div class="col-lg-6 mx-auto text-center">
 				<p class="text-left bigP">
-					Hi, <br /> My name is Elias Schneider and I'm learning software engineering at
+					Hi, <br /> My name is Elias Schneider, I'm {calculateAge(new Date('2005/11/14'))} years old
+					and I'm learning software engineering at
 					<a class="bigP" target="blank" href="https://noseryoung.ch">Noser Young</a>. <br />
 					<br />I love technology and always want to be up to date with this topic. At the moment
 					I'm learning NextJS, Flutter and everything about Web3.
