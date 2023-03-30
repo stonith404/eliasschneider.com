@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    overflow-x: hidden;
+    font-family: "JetBrains Mono";
+    color: white;
+    background-color: black;
+    font-weight: 600;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  a {
+    @apply text-gradient decoration-purple-600;
+  }
+  a:hover {
+    @apply underline decoration-2;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply animate-text bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
