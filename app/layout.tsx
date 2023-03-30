@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Script from "next/script";
 import Header from "./components/Header";
 
 export default function DashboardLayout({
@@ -18,11 +19,11 @@ export default function DashboardLayout({
         <Header />
         <div className="container">{children}</div>
       </body>
-      <script
+      <Script
         defer
         data-domain="eliasschneider.com"
         src="https://analytics.eliasschneider.com/js/script.js"
-      ></script>
+      />
     </html>
   );
 }
