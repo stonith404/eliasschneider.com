@@ -3,12 +3,19 @@ import Card from "@/components/Card";
 import IconButton from "@/components/IconButton";
 import Section from "@/components/Section";
 import { capitalizeFirstLetter } from "@/utils";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { projects, skills } from "../data";
 import ProjectCard from "./ProjectCard";
 import SkillCard from "./SkillCard";
+
+export const metadata: Metadata = {
+  title: "Elias Schneider",
+  description:
+    "Welcome to Elias Schneider's portfolio! Learn more about me and my projects.",
+};
 
 export default function Home() {
   return (
