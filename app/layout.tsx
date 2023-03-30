@@ -14,11 +14,15 @@ export default function DashboardLayout({
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
       </head>
-
       <body className="mb-20">
         <Header />
         <div className="container">{children}</div>
       </body>
+      <script
+        defer
+        data-domain="eliasschneider.com"
+        src="https://analytics.eliasschneider.com/js/script.js"
+      ></script>
     </html>
   );
 }
