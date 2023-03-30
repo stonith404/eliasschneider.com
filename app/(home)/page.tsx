@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { projects, skills } from "../data";
 import ProjectCard from "./ProjectCard";
-import SkillsCard from "./SkillsCard";
+import SkillCard from "./SkillCard";
 
 export default function Home() {
   return (
@@ -58,7 +58,7 @@ export default function Home() {
                   </h3>
                   <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
                     {skills.map((skill) => (
-                      <SkillsCard
+                      <SkillCard
                         key={skill.name}
                         name={skill.name}
                         icon={skill.icon}
