@@ -15,10 +15,13 @@ import SkillCard from "./SkillCard";
 export const metadata: Metadata = {
   title: "Elias Schneider",
   description:
-    "Welcome to Elias Schneider's portfolio! Learn more about me and m  y projects.",
+    "Welcome to Elias Schneider's portfolio! Learn more about me and my projects.",
 };
 
-export default function Home() {
+// Revalidate GitHub stars every 12 hours
+export const revalidate = 60 * 60 * 12;
+
+export default async function Home() {
   return (
     <>
       <div className="mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh]">

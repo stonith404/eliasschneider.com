@@ -3,5 +3,5 @@ export type Project = {
   description: string;
   image: string;
   url: string;
-  highlight?: boolean;
+  githubRepository?: string;
 };

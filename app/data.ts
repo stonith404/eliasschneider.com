@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "Pingvin Share is a self-hosted file sharing platform. Currently this is my most loved project.",
     image: "pingvin-share.png",
     url: "https://github.com/stonith404/pingvin-share",
-    highlight: true,
+    githubRepository: "stonith404/pingvin-share",
   },
   {
     name: "Gradely 2",
@@ -16,6 +16,7 @@ export const projects: Project[] = [
       "Gradely is beautiful grade monitoring app built with Flutter.",
     image: "gradely2.png",
     url: "https://github.com/stonith404/gradely2",
+    githubRepository: "stonith404/gradely2",
   },
   {
     name: "Chilefäud",
