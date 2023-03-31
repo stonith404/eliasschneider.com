@@ -4,6 +4,7 @@ import IconButton from "@/components/IconButton";
 import Section from "@/components/Section";
 import { capitalizeFirstLetter } from "@/utils";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
@@ -14,7 +15,7 @@ import SkillCard from "./SkillCard";
 export const metadata: Metadata = {
   title: "Elias Schneider",
   description:
-    "Welcome to Elias Schneider's portfolio! Learn more about me and my projects.",
+    "Welcome to Elias Schneider's portfolio! Learn more about me and m  y projects.",
 };
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
       <div className="mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh]">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="h-[150px] w-[150px] rounded-[2rem] bg-white md:h-[300px] md:w-[300px]">
-            <img src="/images/pb.png" alt="" />
+            <Image height={300} width={300} src="/images/pb.png" alt="" />
           </div>
 
           <div className="mt-10 w-full md:mt-0">
