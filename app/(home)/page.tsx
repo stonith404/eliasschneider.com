@@ -31,23 +31,34 @@ export default function Home() {
             <p className="text-xl">
               my name is Elias Schneider, Im 17 years old and Im learning
               software engineering at{" "}
-              <Link href="https://noseryoung.ch">Noser Young</Link>. I love
-              technology and always want to be up to date with the latest
-              advancements.
+              <Link target="_blank" href="https://noseryoung.ch">
+                Noser Young
+              </Link>
+              . I love technology and always want to be up to date with the
+              latest advancements.
               <br /> <br /> At the moment I'm working on my open-source project{" "}
-              <Link href="https://github.com/stonith404/pingvin-share">
+              <Link
+                target="_blank"
+                href="https://github.com/stonith404/pingvin-share"
+              >
                 Pingvin Share
               </Link>{" "}
               and I'm also learning the fundamentals of machine learning.
             </p>
             <div className="mt-7 flex space-x-8">
-              <IconButton href="https://github.com/stonith404">
+              <IconButton target="_blank" href="https://github.com/stonith404">
                 <FaGithub size={20} />
               </IconButton>
-              <IconButton href="https://www.linkedin.com/in/elias-schneider-82887a21a/">
+              <IconButton
+                target="_blank"
+                href="https://www.linkedin.com/in/elias-schneider-82887a21a/"
+              >
                 <FaLinkedin size={20} />
               </IconButton>
-              <IconButton href="mailto:elias@eliasschneider.com">
+              <IconButton
+                target="_blank"
+                href="mailto:elias@eliasschneider.com"
+              >
                 <HiMail size={20} />
               </IconButton>
             </div>

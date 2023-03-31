@@ -19,7 +19,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <h4 className="py-5 text-center text-xl font-bold">{project.name}</h4>
       <p className="mb-4 text-center">{project.description}</p>
       <Center>
-        <Link href={project.url} className="mt-8 text-center">
+        <Link target="_blank" href={project.url} className="mt-8 text-center">
           Learn more
         </Link>
       </Center>
