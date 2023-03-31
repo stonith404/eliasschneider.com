@@ -7,7 +7,7 @@
 @layer base {
   body {
     overflow-x: hidden;
-    font-family: "JetBrains Mono";
+    font-family: monospace;
     color: white;
     background-color: black;
     font-weight: 600;
@@ -30,7 +30,7 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  .hide-scrollbar{
+  .hide-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
