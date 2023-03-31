@@ -27,7 +27,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 w-full md:mt-0">
-            <h1 className="text-gradient text-4xl font-extrabold">Hi there,</h1>
+            <p className="text-gradient text-4xl font-extrabold">Hi there,</p>
             <p className="text-xl">
               my name is Elias Schneider, Im 17 years old and Im learning
               software engineering at{" "}
@@ -71,9 +71,9 @@ export default function Home() {
             {Object.entries(skills).map(([category, skills]) => (
               <AnimateOnScroll key={category}>
                 <Card>
-                  <h3 className="mb-4 text-lg font-bold">
+                  <h4 className="mb-4 text-lg font-bold">
                     {capitalizeFirstLetter(category)}
-                  </h3>
+                  </h4>
                   <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
                     {skills.map((skill) => (
                       <SkillCard

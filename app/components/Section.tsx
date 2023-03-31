@@ -10,7 +10,6 @@ export default function Section({
   return (
     <div className="mt-32">
       <h2 className="mb-10 text-center font-bold">{title}</h2>
-
       {children}
     </div>
   );
