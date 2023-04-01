@@ -13,7 +13,7 @@ const AnimateOnScroll = ({ children }: { children: ReactNode }) => {
       }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{
-        duration: 2,
+        duration: 1.5,
       }}
     >
       {children}
