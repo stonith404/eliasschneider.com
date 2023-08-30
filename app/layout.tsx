@@ -22,7 +22,7 @@ export default function DashboardLayout({
         <Footer />
       </body>
       <Script
-        data-website-id="ca999ce8-99c3-409f-957b-cd61a8d6e867"
+        data-website-id="891a59fe-fd0d-4f38-abd5-d9ede18ec7e1"
         async
         src="https://analytics.eliasschneider.com/script.js"
       />
