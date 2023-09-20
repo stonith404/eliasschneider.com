@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 // Revalidate GitHub stars every 12 hours
-export const revalidate = 60 * 60 * 12;
+export const revalidate = 43200;
 
 export default async function Home() {
   return (
@@ -69,7 +69,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <Section title="Skills">
+      <Section title="Skills" subTitle="Recent Technologies I've Been Using">
         <div className="flex justify-center">
           <div className="grid w-full grid-cols-1 gap-5 xl:grid-cols-2">
             {Object.entries(skills).map(([category, skills]) => (
@@ -93,7 +93,7 @@ export default async function Home() {
           </div>
         </div>
       </Section>
-      <Section title="Projects">
+      <Section title="Projects" subTitle="My favourite projects">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <AnimateOnScroll key={project.name}>
