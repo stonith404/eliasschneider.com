@@ -11,20 +11,21 @@ export const projects: Project[] = [
     githubRepository: "stonith404/pingvin-share",
   },
   {
+    name: "CD-DC",
+    description:
+      "A simple service to continuously deploy docker containers in a docker compose stack. The tool is especially useful in a GitHub Actions workflow.",
+    image: "cd-dc.png",
+    url: "https://github.com/stonith404/cd-dc",
+    githubRepository: "stonith404/cd-dc",
+  },
+  {
     name: "Gradely 2",
     description:
       "Gradely is beautiful grade monitoring app built with Flutter.",
     image: "gradely2.png",
     url: "https://github.com/stonith404/gradely2",
     githubRepository: "stonith404/gradely2",
-  },
-  {
-    name: "Chilefäud",
-    description:
-      "An app for my old school, to access the intern website over the app, also built with Flutter.",
-    image: "kirchenfeld.png",
-    url: "https://github.com/stonith404/gradely2",
-  },
+  }
 ];
 
 export const skills: Skill = {
@@ -34,31 +35,26 @@ export const skills: Skill = {
       icon: "typescript-plain",
     },
     {
-      name: "Java",
-      icon: "java-plain",
+      name: "Go",
+      icon: "go-original-wordmark",
     },
     {
-      name: "Python",
-      icon: "python-plain",
+      name: "C#",
+      icon: "csharp-plain",
+    },
+    {
+      name: "Java",
+      icon: "java-plain",
     },
   ],
   frontend: [
     {
-      name: "Next.js",
+      name: "Next.js (React)",
       icon: "nextjs-plain",
     },
     {
-      name: "React",
-      icon: "react-plain",
-    },
-
-    {
-      name: "Svelte",
+      name: "Svelte (Kit)",
       icon: "svelte-plain",
-    },
-    {
-      name: "Flutter",
-      icon: "flutter-plain",
     },
     {
       name: "React Native",
@@ -71,8 +67,8 @@ export const skills: Skill = {
       icon: "nestjs-plain",
     },
     {
-      name: "Express.js",
-      icon: "express-original",
+      name: "Dotnet",
+      icon: "dotnetcore-plain",
     },
     {
       name: "Spring Boot",
