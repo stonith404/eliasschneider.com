@@ -35,8 +35,8 @@ export default async function Home() {
             <p className="text-xl">
               my name is Elias Schneider, I'm 17 years old and I'm learning
               software engineering at{" "}
-              <Link target="_blank" href="https://noseryoung.ch">
-                Noser Young
+              <Link target="_blank" href="https://akros.ch">
+                Akros
               </Link>
               . I love technology and always want to be up to date with the
               latest advancements.
