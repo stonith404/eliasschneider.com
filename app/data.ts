@@ -3,9 +3,16 @@ import { Skill } from "@/types/skill.type";
 
 export const projects: Project[] = [
   {
+    name: "Freizeit Bern",
+    description:
+      "Freizeitbern is a website that recommends leisure activities in Bern (my home town) such as parties, events, culture, and sports.",
+    image: "freizeit-bern.png",
+    url: "https://freizeitbern.ch",
+  },
+  {
     name: "Pingvin Share",
     description:
-      "Pingvin Share is a self-hosted file sharing platform. Currently this is my most loved project.",
+      "Pingvin Share is an open-source file sharing platform that can easily be self-hosted.",
     image: "pingvin-share.png",
     url: "https://github.com/stonith404/pingvin-share",
     githubRepository: "stonith404/pingvin-share",
@@ -25,7 +32,7 @@ export const projects: Project[] = [
     image: "gradely2.png",
     url: "https://github.com/stonith404/gradely2",
     githubRepository: "stonith404/gradely2",
-  }
+  },
 ];
 
 export const skills: Skill = {

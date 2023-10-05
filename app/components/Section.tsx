@@ -12,9 +12,7 @@ export default function Section({
   return (
     <div className="mt-32">
       <h2 className="mb-2 text-center font-bold">{title}</h2>
-      {subTitle && (
-        <p className="text-center text-gray-300">{subTitle}</p>
-      )}
+      {subTitle && <p className="text-center text-gray-300">{subTitle}</p>}
       <div className="mt-10">{children}</div>
     </div>
   );

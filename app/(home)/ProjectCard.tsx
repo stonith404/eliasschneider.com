@@ -46,7 +46,7 @@ async function GitHubStars({
       .getStarsByRepository(githubRepository)
       .catch(() => undefined));
 
-  if (!stars) return null;
+  if (!stars) return <div className="h-[24px]"></div>;
 
   return (
     <div className="flex justify-end">
