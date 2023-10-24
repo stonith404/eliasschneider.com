@@ -3,9 +3,9 @@ import { Skill } from "@/types/skill.type";
 
 export const projects: Project[] = [
   {
-    name: "Freizeit Bern",
+    name: "FREIZEIT BERN",
     description:
-      "Freizeitbern is a website that recommends leisure activities in Bern (my home town) such as parties, events, culture, and sports.",
+      "FREIZEIT BERN is a website that recommends leisure activities in Bern (my home town) such as parties, events, culture, and sports.",
     image: "freizeit-bern.png",
     url: "https://freizeitbern.ch",
   },
