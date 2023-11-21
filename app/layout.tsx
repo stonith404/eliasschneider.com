@@ -18,7 +18,7 @@ export default function DashboardLayout({
       </head>
       <body>
         <Header />
-        <div className="container">{children}</div>
+        <div>{children}</div>
         <Footer />
       </body>
       <Script

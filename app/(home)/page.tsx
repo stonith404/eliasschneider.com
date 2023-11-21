@@ -24,8 +24,8 @@ export const revalidate = 43200;
 export default async function Home() {
   return (
     <>
-      <div className="mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh]">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh] square-background">
+        <div className="grid grid-cols-1 md:grid-cols-2 container">
           <div className="h-[150px] w-[150px] rounded-[2rem] bg-white md:h-[300px] md:w-[300px]">
             <Image height={300} width={300} src="/images/pb.png" alt="" />
           </div>
@@ -69,6 +69,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
+      <div className="container">
       <Section title="Skills" subTitle="Recent Technologies I've Been Using">
         <div className="flex justify-center">
           <div className="grid w-full grid-cols-1 gap-5 xl:grid-cols-2">
@@ -102,6 +103,7 @@ export default async function Home() {
           ))}
         </div>
       </Section>
+      </div>
     </>
   );
 }
