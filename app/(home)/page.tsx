@@ -24,8 +24,8 @@ export const revalidate = 43200;
 export default async function Home() {
   return (
     <>
-      <div className="mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh] square-background">
-        <div className="grid grid-cols-1 md:grid-cols-2 container">
+      <div className="square-background mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh]">
+        <div className="container grid grid-cols-1 md:grid-cols-2">
           <div className="h-[150px] w-[150px] rounded-[2rem] bg-white md:h-[300px] md:w-[300px]">
             <Image height={300} width={300} src="/images/pb.png" alt="" />
           </div>
@@ -33,8 +33,7 @@ export default async function Home() {
           <div className="mt-10 w-full md:mt-0">
             <p className="text-gradient text-4xl font-extrabold">Hi there,</p>
             <p className="text-xl">
-              my name is Elias and I'm learning
-              software engineering at{" "}
+              my name is Elias and I'm learning software engineering at{" "}
               <Link target="_blank" href="https://akros.ch">
                 Akros
               </Link>
@@ -70,39 +69,39 @@ export default async function Home() {
         </div>
       </div>
       <div className="container">
-      <Section title="Skills" subTitle="Recent Technologies I've Been Using">
-        <div className="flex justify-center">
-          <div className="grid w-full grid-cols-1 gap-5 xl:grid-cols-2">
-            {Object.entries(skills).map(([category, skills]) => (
-              <AnimateOnScroll key={category}>
-                <Card>
-                  <h4 className="mb-4 text-lg font-bold">
-                    {capitalizeFirstLetter(category)}
-                  </h4>
-                  <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
-                    {skills.map((skill) => (
-                      <SkillCard
-                        key={skill.name}
-                        name={skill.name}
-                        icon={skill.icon}
-                      />
-                    ))}
-                  </div>
-                </Card>
+        <Section title="Skills" subTitle="Recent Technologies I've Been Using">
+          <div className="flex justify-center">
+            <div className="grid w-full grid-cols-1 gap-5 xl:grid-cols-2">
+              {Object.entries(skills).map(([category, skills]) => (
+                <AnimateOnScroll key={category}>
+                  <Card>
+                    <h4 className="mb-4 text-lg font-bold">
+                      {capitalizeFirstLetter(category)}
+                    </h4>
+                    <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
+                      {skills.map((skill) => (
+                        <SkillCard
+                          key={skill.name}
+                          name={skill.name}
+                          icon={skill.icon}
+                        />
+                      ))}
+                    </div>
+                  </Card>
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+        </Section>
+        <Section title="Projects" subTitle="My Favourite Projects">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <AnimateOnScroll key={project.name}>
+                <ProjectCard project={project} />
               </AnimateOnScroll>
             ))}
           </div>
-        </div>
-      </Section>
-      <Section title="Projects" subTitle="My Favourite Projects">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <AnimateOnScroll key={project.name}>
-              <ProjectCard project={project} />
-            </AnimateOnScroll>
-          ))}
-        </div>
-      </Section>
+        </Section>
       </div>
     </>
   );
