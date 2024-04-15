@@ -64,8 +64,8 @@ export const skills: Skill = {
       icon: "svelte-plain",
     },
     {
-      name: "React Native",
-      icon: "react-plain",
+      name: "Flutter",
+      icon: "flutter-plain",
     },
   ],
   backend: [

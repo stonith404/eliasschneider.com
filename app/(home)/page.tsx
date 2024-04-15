@@ -33,7 +33,7 @@ export default async function Home() {
           <div className="mt-10 w-full md:mt-0">
             <p className="text-gradient text-4xl font-extrabold">Hi there,</p>
             <p className="text-xl">
-              my name is Elias Schneider, I'm 17 years old and I'm learning
+              my name is Elias and I'm learning
               software engineering at{" "}
               <Link target="_blank" href="https://akros.ch">
                 Akros
