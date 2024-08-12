@@ -3,6 +3,14 @@ import { Skill } from "@/types/skill.type";
 
 export const projects: Project[] = [
   {
+    name: "Pocket ID",
+    description:
+      "Pocket ID is a simple but powerful OIDC provider that allows users to authenticate with their passkeys to your services.",
+    image: "pocket-id.png",
+    url: "https://github.com/stonith404/pocket-id",
+    githubRepository: "stonith404/pocket-id",
+  },
+  {
     name: "FREIZEIT BERN",
     description:
       "FREIZEIT BERN is a website that recommends leisure activities in Bern (my home town) such as parties, events, culture, and sports.",
@@ -16,14 +24,6 @@ export const projects: Project[] = [
     image: "pingvin-share.png",
     url: "https://github.com/stonith404/pingvin-share",
     githubRepository: "stonith404/pingvin-share",
-  },
-  {
-    name: "CD-DC",
-    description:
-      "A simple service to continuously deploy docker containers in a docker compose stack. The tool is especially useful in a GitHub Actions workflow.",
-    image: "cd-dc.png",
-    url: "https://github.com/stonith404/cd-dc",
-    githubRepository: "stonith404/cd-dc",
   },
   {
     name: "Gradely 2",
@@ -49,10 +49,6 @@ export const skills: Skill = {
       name: "C#",
       icon: "csharp-plain",
     },
-    {
-      name: "Java",
-      icon: "java-plain",
-    },
   ],
   frontend: [
     {
@@ -62,6 +58,10 @@ export const skills: Skill = {
     {
       name: "Svelte (Kit)",
       icon: "svelte-plain",
+    },
+    {
+      name: "Blazor",
+      icon: "blazor-original",
     },
     {
       name: "Flutter",
@@ -74,7 +74,7 @@ export const skills: Skill = {
       icon: "nestjs-plain",
     },
     {
-      name: "Dotnet",
+      name: "ASP.NET Core",
       icon: "dotnetcore-plain",
     },
     {
