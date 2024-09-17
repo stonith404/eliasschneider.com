@@ -23,8 +23,8 @@ export default function DashboardLayout({
       </body>
       <Script
         defer
-        data-domain="eliasschneider.com"
-        src="https://analytics.eliasschneider.com/js/script.js"
+        src="https://analytics.eliasschneider.com/script.js"
+        data-website-id="c1d09d7d-3909-4c6e-b9c5-d48877de5540"
       />
     </html>
   );
