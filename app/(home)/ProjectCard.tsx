@@ -11,7 +11,6 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="w-100 h-full">
       <Suspense fallback={<></>}>
-        {/* @ts-expect-error Server Component */}
         <GitHubStars githubRepository={project.githubRepository} />
       </Suspense>
       <Center>
