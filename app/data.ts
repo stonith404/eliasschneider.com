@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     name: "Pocket ID",
     description:
-      "Pocket ID is a simple but powerful OIDC provider that allows users to authenticate with their passkeys to your services.",
+      "An easy-to-use OAuth 2.0 and OpenID Connect provider that lets users sign in to your services with their passkeys.",
     image: "pocket-id.png",
     url: "https://github.com/stonith404/pocket-id",
     githubRepository: "stonith404/pocket-id",
