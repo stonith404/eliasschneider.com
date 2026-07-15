@@ -8,6 +8,8 @@ async function getStarsByRepository(repository: string) {
   return stars;
 }
 
-export default {
+const githubService = {
   getStarsByRepository,
 };
+
+export default githubService;

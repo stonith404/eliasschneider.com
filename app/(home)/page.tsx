@@ -27,19 +27,30 @@ export default async function Home() {
       <div className="square-background mt-20 flex shrink-0 items-center justify-center md:mt-0 md:h-[70vh]">
         <div className="container grid grid-cols-1 md:grid-cols-2">
           <div className="h-[150px] w-[150px] md:h-[300px] md:w-[300px]">
-            <Image className="rounded-[2rem]" height={300} width={300} src="/images/pb.png" alt="" />
+            <Image
+              className="rounded-[2rem]"
+              height={300}
+              width={300}
+              src="/images/pb.png"
+              alt=""
+            />
           </div>
 
           <div className="mt-10 w-full md:mt-0">
             <p className="text-gradient text-4xl font-extrabold">Hi there,</p>
             <p className="text-xl">
-              I'm Elias, a software engineer and open-source creator based in Switzerland.
-             <br /> <br />
-              I love working on open-source projects and creating tools that make users' lives easier.
-              <br /> <br /> 
-              I'm the founder of  <Link target="_blank" href="https://pocket-id.org">
+              I’m Elias, a software engineer and open-source creator based in
+              Switzerland.
+              <br /> <br />
+              I love working on open-source projects and creating tools that
+              make users’ lives easier.
+              <br /> <br />
+              I’m the founder of{" "}
+              <Link target="_blank" href="https://pocket-id.org">
                 Pocket ID
-              </Link>, a passkey-first OIDC identity provider that powers over 11k instances worldwide.
+              </Link>
+              , a passkey-first OIDC identity provider that powers over 11k
+              instances worldwide.
             </p>
             <div className="mt-7 flex space-x-8">
               <IconButton target="_blank" href="https://github.com/stonith404">

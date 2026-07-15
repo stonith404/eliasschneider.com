@@ -9,7 +9,7 @@ import { HiStar } from "react-icons/hi";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="w-100 h-full">
+    <Card className="h-full w-100">
       <Suspense fallback={<></>}>
         <GitHubStars githubRepository={project.githubRepository} />
       </Suspense>
